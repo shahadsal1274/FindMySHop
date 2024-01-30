@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFECCF"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/icon"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        android:src="@drawable/icon22"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/textVieww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="-6dp"
+        android:text="@string/nice"
+        android:textColor="#9F9A98"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="348dp"
+        android:layout_height="388dp"
+android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:fontFamily="serif"
+        android:text="@string/about"
+        android:textColor="#9F9A98"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/callUs"
+        android:layout_width="113dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:onClick="callUs"
+        android:text="Call Us"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="TO CONTACT US : " />
+
+
+
+
+</RelativeLayout>

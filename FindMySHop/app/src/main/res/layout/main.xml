@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECCF"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        android:src="@drawable/icon22"
+       />
+
+    <HorizontalScrollView
+       android:id="@+id/scrollable"
+       android:layout_below="@+id/icon"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="0.5in"
+               android:layout_height="1in"
+               android:scaleType="centerCrop"
+               android:layout_marginRight="5dp"
+               android:src="@drawable/mall1"
+               android:onClick="mall1"
+               />
+           <ImageView
+               android:layout_width="0.5in"
+               android:layout_height="1in"
+               android:scaleType="centerCrop"
+               android:layout_marginRight="5dp"
+               android:src="@drawable/mall2"
+               android:onClick="mall2"
+               />
+           <ImageView
+           android:layout_width="0.5in"
+           android:layout_height="1in"
+           android:scaleType="centerCrop"
+           android:layout_marginRight="5dp"
+           android:src="@drawable/mall3"
+               android:onClick="mall3" />
+           <ImageView
+           android:layout_width="0.5in"
+           android:layout_height="1in"
+           android:scaleType="centerCrop"
+           android:layout_marginRight="5dp"
+           android:src="@drawable/mall4"
+               android:onClick="mall4"/>
+           <ImageView
+               android:layout_width="0.5in"
+               android:layout_height="1in"
+               android:scaleType="centerCrop"
+               android:layout_marginRight="5dp"
+               android:src="@drawable/mall5"
+               android:onClick="mall5"/>
+           <ImageView
+               android:layout_width="0.5in"
+               android:layout_height="1in"
+               android:scaleType="centerCrop"
+               android:layout_marginRight="5dp"
+               android:src="@drawable/mall6"
+               android:onClick="mall6"/>
+
+
+       </LinearLayout>
+       
+   </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="235dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/button_exit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+
+
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:onClick="info"
+        android:text="INFO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollable"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="86dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FFECCF"
+        android:onClick="exit"
+        android:text="EXIT" />
+
+
+</RelativeLayout>
